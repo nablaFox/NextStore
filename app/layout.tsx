@@ -1,5 +1,6 @@
 import Header from '@/components/header'
 import Footer from '@/components/footer'
+import { Providers } from './providers'
 
 import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
@@ -16,11 +17,17 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      suppressHydrationWarning
+    >
+      <head />
       <body className={GeistSans.className}>
-        <Header />
-        {children}
-        <Footer />
+        <Providers>
+          <Header />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   )

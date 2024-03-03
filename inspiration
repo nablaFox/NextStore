@@ -16,6 +16,7 @@ inspiration:
 	- https://vercel.com/templates/next.js/subscription-starter
 
 ui:
+	- https://nextui.org/
 	- https://geist-ui.dev/en-us/components/drawer
  	- https://www.radix-ui.com/
 	- https://ui.shadcn.com/docs/theming
